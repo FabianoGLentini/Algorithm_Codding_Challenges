@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+//         Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+// Examples (Input -> Output):
+// * "String"      -> "SSttrriinngg"
+// * "Hello World" -> "HHeelllloo  WWoorrlldd"
+// * "1234!_ "     -> "11223344!!__ 
+
+//First Pass
+
+function doubleChar(str) {
+  let output =''
+  for (i=0; i<str.length; i++){
+    output += str[i]+str[i]
+  }
+  return output
+}
+
+// Code wars Refractor
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
+
+    </script>
+</body>
+</html>
+
