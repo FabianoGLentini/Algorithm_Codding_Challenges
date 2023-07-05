@@ -29,3 +29,7 @@ function countDevelopers(list) {
     return list.filter(obj=> obj.continent == "Europe" && obj.language == "JavaScript").length
     
   }
+
+//Refractor
+
+const countDevelopers = list => list.filter(obj=> obj.continent == "Europe" && obj.language == "JavaScript").length
