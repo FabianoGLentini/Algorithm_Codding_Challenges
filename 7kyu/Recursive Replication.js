@@ -7,7 +7,7 @@
 //Break Down
 
 function replicate(times, number) {
-    //we check if times has reached zero or started as negative, if yes we  return [] else we return an array taht contains the number to begin with and then we add to that arr a recursion of the function spread to pull out whatever value it adds while reducing times down by 1
+    //we check if times has reached zero  or started as negative, if yes we  return [] else we return an array taht contains the number to begin with and then we add to that arr a recursion of the function spread to pull out whatever value it adds while reducing times down by 1
     return times > 0 ? [number, ...replicate( times - 1, number )] : [];
   }
 
