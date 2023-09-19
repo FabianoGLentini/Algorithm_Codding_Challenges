@@ -37,3 +37,17 @@ function findMissingLetter(array) {
     }
     throw new Error("Invalid input")
   }
+
+
+//My New Pass For Fun
+
+function findMissingLetter(array){
+  const charV =  array.map(el => el.charCodeAt())
+  let missing
+  
+  for(i=charV[0]; i<=charV[charV.length - 1];i++){
+    if(!charV.includes(i)) return missing = String.fromCharCode(i)
+  }
+  
+  return missing
+}
