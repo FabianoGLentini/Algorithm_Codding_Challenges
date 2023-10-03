@@ -1,4 +1,4 @@
-# CodeWars Learning and Practice Repository
+# CodeWars-Demo
 Welcome to my CodeWars learning and practice repository! Here, I document my journey of skill enhancement as a programmer through regular engagement with CodeWars coding challenges.
 ## Repository Structure
 - Commits: Each commit in this repository represents my initial attempt at solving a CodeWars coding problem before examining the community's solutions.
