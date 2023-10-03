@@ -7,6 +7,6 @@ Welcome to my CodeWars learning and practice repository! Here, I document my jou
 - When I encounter challenges I can't crack, I commit my work-in-progress and then carefully analyze and study community solutions from CodeWars. These analyses are shared here.
 ## Learning Integration
 I take learning seriously, and to maximize my growth, I've integrated several key practices:
-Anki Flashcards: I maintain an Anki flashcard deck where I capture the insights and lessons I gain from studying community solutions. This ensures spaced repetition learning and retention.
+Anki Flashcards: I maintain an Anki flashcard deck where I capture the insights and lessons I gain from studying community solutions. Which solidifies my learning.
 Valuable Lessons: If I come across CodeWars problems that offer particularly valuable lessons and techniques, I include them in my Anki deck as well. This allows me to revisit and reinforce essential concepts for optimum learning.
-Feel free to explore this repository and follow along with my programming journey. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding! 🚀👨‍💻
+Feel free to explore this repository and follow along with my programming journey. You can also check out my code-wars account [here](https://www.codewars.com/users/Fabiano.L). If you have any questions or suggestions, please don't hesitate to reach out. Happy coding! 🚀👨‍💻
