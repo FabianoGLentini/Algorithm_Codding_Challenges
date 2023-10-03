@@ -1,7 +1,7 @@
 # CodeWars-Demo
 Welcome to my CodeWars learning and practice repository! Here, I document my journey of skill enhancement as a programmer through regular engagement with CodeWars coding challenges.
 ## Repository Structure
-- Commits: Each commit in this repository represents my initial attempt at solving a CodeWars coding problem before examining the community's solutions.
+- Each commit in this repository represents my initial attempt at solving a CodeWars coding problem before examining the community's solutions.
 - Accompanied with the commit is the provided text for the coding problem.
 - Most commits include a community solution which is different then my own.
 - When I encounter challenges I can't crack, I commit my work-in-progress and then carefully analyze and study community solutions from CodeWars. These analyses are shared here.
