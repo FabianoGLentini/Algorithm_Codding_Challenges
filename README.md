@@ -4,7 +4,7 @@ Welcome to my CodeWars learning and practice repository! Here, I document my jou
 - Each commit in this repository represents my initial attempt at solving a CodeWars coding problem before examining the community's solutions.
 - Accompanied with the commit is the provided text for the coding problem.
 - Most commits include a community solution which is different then my own.
-- When I encounter challenges I can't crack, I commit my work-in-progress and then carefully analyze and study community solutions from CodeWars. These analyses are shared here.
+- When I encounter challenges I can't crack, I include my work-in-progress, then carefully breakdown and study community solutions from CodeWars and then commit the hole process. These analyses are shared here.
 ## Learning Integration
 I take learning seriously, and to maximize my growth, I've integrated several key practices:
 Anki Flashcards: I maintain an Anki flashcard deck where I capture the insights and lessons I gain from studying community solutions. Which solidifies my learning.
