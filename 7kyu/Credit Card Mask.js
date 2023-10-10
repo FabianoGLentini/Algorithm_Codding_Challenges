@@ -24,7 +24,7 @@ function maskify(cc) {
     return cc.join("")
   }
 
-// Code Wars Alternative
+// Code Wars Alternative 
 
 function maskify(cc) {
     return cc.slice(-4).padStart(cc.length,'#')
