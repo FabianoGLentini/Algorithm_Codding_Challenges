@@ -10,7 +10,6 @@
 
 //My First Pass
 
-
 function twoSum(numbers, target) {
     let val01, val02 
     
@@ -24,8 +23,8 @@ function twoSum(numbers, target) {
 // Code Wars Alternative
 
 function twoSum(numbers, target) {
-    for (var i = 0; i < numbers.length-1; i++) {
-        for (var j = i+1; j < numbers.length; j++) {
+    for (i = 0; i < numbers.length-1; i++) {
+        for (j = i+1; j < numbers.length; j++) {
             if (numbers[i] + numbers[j] === target) return [i, j];
         }
     }
