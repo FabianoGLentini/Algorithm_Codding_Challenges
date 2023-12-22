@@ -48,14 +48,14 @@ const encryptThis = text =>
   //My Adjustments to the code wars alternative
 
   const encryptThis = text =>{ 
-  text.split(' ')
-    .map(word => encryptWord(word))
-    .join(' ')
+  return text.split(' ')
+            .map(word => encryptWord(word))
+            .join(' ')
 
-          const encryptWord = word =>{ 
-            word[0].charCodeAt() +
-          (word.length > 2 ? word[word.length - 1] : '') +
-          (word.length > 2 ? word.slice(2, -1) : '') +
-          (word[1] || '') 
-          }
+    function encryptWord(word) { 
+        return word[0].charCodeAt() +
+         (word.length > 2 ? word[word.length - 1] : '') +
+         (word.length > 2 ? word.slice(2, -1) : '') +
+         (word[1] || '') 
+    }
 }
