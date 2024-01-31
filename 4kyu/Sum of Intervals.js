@@ -111,7 +111,7 @@ function sumIntervals(intervals) {
 }
 
 
-//Code Wars Answer
+//Code Wars Answer. Note this code works but it tends to time out as the process is to long
 
 const sumIntervals = (intervals) => {
   intervals.sort((p, n) => p[1] - n[1]);
@@ -127,7 +127,7 @@ const sumIntervals = (intervals) => {
   return intervals.reduce((a, v) => a + (v[1]-v[0]),0);
 }
 
-    //My Breakdown of the answer; Note: I was part way there I neede to re-evaluate the loop that created teh new interval arr
+    //My Breakdown of the answer; Note: I was part way there I neede to re-evaluate the loop that created teh new interval arr. 
 
     const sumIntervals = (intervals) => {
       intervals.sort((p, n) => p[1] - n[1]); // sort intervals from smallest end value of eahc array to biggest
@@ -137,8 +137,43 @@ const sumIntervals = (intervals) => {
               intervals[i][0] = Math.min(intervals[i][0], intervals[i+1][0]) //we take teh smallest interval between the 2 starting value of eahc intervals to push as the new starting interval
               intervals[i][1] = intervals[i+1][1]; //we replace the largest interval of the two as our new large value, we do not need to use Math.max as weve sorted the array based on teh large value of each intervals
               intervals.splice(i+1,1); // We use splice to remove the old interval that was overlapped.
-              i = -1; //We bring the i back down by 1 so we can re-evaluate the array to allow us to check the new interval with the next interval, this allows us to catch new overlaps.
+              i = -1; //We bring the i equal to -1 so we can re-evaluate the array to allow us to check the new interval with the next interval, this allows us to catch new overlaps.
           }
       }
       return intervals.reduce((a, v) => a + (v[1]-v[0]),0); // we now reduce our interval to find the sum
+  }
+
+
+
+  //Alternative code that works better on slower computers, with my own minor adjustments
+
+  function sumIntervals(int) {
+    let ys = int.sort(([a,b], [c,d]) => a-c),
+        m = -Number.MAX_VALUE,
+        res = 0;
+
+    for (let [a,b] of ys) {
+      m = Math.max(m, a);
+      res += Math.max(0, b-m);
+      m = Math.max(m, b);
+    }
+
+    return res;
+  }
+
+
+  //My breakdown of alternative code
+
+  function sumIntervals(int) {
+    let ys = int.sort(([a,b], [c,d]) => a-c), // We create a new array that contains the sorted interval based on the smaller side of the int. Note: we use [a,b] array format to prevent having to declare the index of each array element
+        m = -Number.MAX_VALUE, // we create a variable that will contain our comparison, here we use the smallest value js can posibly give us as comparison to insure we include all valid number but we can also use the first starting value as it should be the smallest one as wee sorted the array
+        res = 0; // we create are variable that will contain teh sum of all the intervals
+
+    for (let [a,b] of ys) { // we use the for of loop to iterate through each array element
+      m = Math.max(m, a); // we compare the two current values and assign the biggest one for m, replacing its older one. Note this also helps us determine iftheir is any overlap and will not add overlapping sum as it will alway select the largest number which we have not concidere as of yet
+      res += Math.max(0, b-m); // we add the largest numb between 0 and the biggest number of the current elemnt minu smallest number
+      m = Math.max(m, b); //we assign the max number to m between itself and the largestnumber of the current interval. This will allow us to compare the nextinterval with this interval to see if their is any overlap
+    }
+
+    return res; // return final answer of total sum 
   }
