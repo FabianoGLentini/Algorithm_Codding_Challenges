@@ -39,3 +39,14 @@ function triangleType(a, b, c){
     
     return d1 <= 0 ||  d2 <= 0 || d3 <= 0 || Math.round(d1+d2+d3) !== 180 ? 0 : d1 < 90 && d2 < 90 && d3 < 90 ? 1 : d1 > 90 || d2 > 90 || d3 > 90 ? 3 : 2
   }
+
+
+// Code Wars Alternative
+
+function sumConsecutives(s) {
+      return s.reduce(function(prev, curr, i, arr) {
+        if(curr != arr[i - 1]) prev.push(curr);
+        else prev[prev.length - 1] += curr;
+        return prev;
+      }, []);
+    }
