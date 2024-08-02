@@ -47,3 +47,10 @@ def high_and_low(numbers):
 def high_and_low(numbers): #z.
     nn = [int(s) for s in numbers.split(" ")]
     return "%i %i" % (max(nn),min(nn))
+
+
+# Or
+
+def high_and_low(numbers):
+  numbers = [int(c) for c in numbers.split(' ')]
+  return f"{max(numbers)} {min(numbers)}"
