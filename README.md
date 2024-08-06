@@ -6,7 +6,7 @@ Welcome to my CodeWars learning and practice repository! Here, I document my jou
 - Most commits include a community solution which is different then my own.
 - When I encounter challenges I can't crack, I include my work-in-progress, then carefully breakdown and study community solutions from CodeWars and then commit the hole process. These analyses are shared here.
 
-##Note:## As I learned and practiced new programming languages, I’ve started specifying the language used in each commit. If a commit message doesn’t explicitly mention a language, please assume it’s written in JavaScript.
+**Note:** As I learned and practiced new programming languages, I’ve started specifying the language used in each commit. If a commit message doesn’t explicitly mention a language, please assume it’s written in JavaScript.
 ## Learning Integration
 
 I take learning seriously, and to maximize my growth, I've integrated several key practices:
