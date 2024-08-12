@@ -90,7 +90,7 @@ function dirReduc(arr){
   }
 
 
-  // Code Wars Solution
+  // Code Wars Solution (Note: I now realize taht I needed to check if the opposites were directly after one another)
 
   function dirReduc(plan) {
     var opposite = {
