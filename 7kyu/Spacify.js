@@ -8,3 +8,7 @@
 function spacify(str) {
     return str.split("").join(" ")
   }
+
+// My Refractor
+
+const spacify = str => str.split("").join(" ")
