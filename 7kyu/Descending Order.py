@@ -32,3 +32,11 @@ def Descending_Order(num):
     s = ''.join(s)
     return int(s)
 
+# Chat GPT Recomendation for optimal clarity and efficiency
+
+def descending_order(num):
+    # Convert the number to a string and sort the digits in descending order
+    sorted_digits = sorted(str(num), reverse=True)
+    
+    # Join the sorted digits and convert back to an integer
+    return int("".join(sorted_digits))
