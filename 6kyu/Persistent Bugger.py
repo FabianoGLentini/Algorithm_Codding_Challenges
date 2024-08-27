@@ -56,3 +56,16 @@ def persistence(n):
 from operator import mul
 def persistence(n):
     return 0 if n<10 else persistence(reduce(mul,[int(i) for i in str(n)],1))+1
+
+# Chat Recomendation
+
+from math import prod
+
+def persistence(n):
+    steps = 0
+    
+    while n > 9:
+        steps += 1
+        n = prod(int(digit) for digit in str(n))
+    
+    return steps
