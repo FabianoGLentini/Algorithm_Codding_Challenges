@@ -177,3 +177,29 @@ const sumIntervals = (intervals) => {
 
     return res; // return final answer of total sum 
   }
+
+
+// Chat Recomendation
+
+function sumIntervals(intervals) {
+  if (intervals.length === 0) return 0; // Handle empty input
+  
+  const sortedIntervals = intervals.sort(([a, b], [c, d]) => a - c);
+  let currentEnd = sortedIntervals[0][0];
+  let sum = 0;
+
+  for (let i = 0; i < sortedIntervals.length; i++) {
+    const [start, end] = sortedIntervals[i];
+    
+    if (start > currentEnd) {
+      currentEnd = start;
+    }
+
+    if (end > currentEnd) {
+      sum += end - currentEnd;
+      currentEnd = end;
+    }
+  }
+
+  return sum;
+}
