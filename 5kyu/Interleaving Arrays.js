@@ -46,3 +46,20 @@ const interleave = (...a) => {
     const l = Math.max(...arrs.map(a => a.length));
     return Array.from({ length: l }, (_, i) => arrs.flatMap(a => a[i] ?? null)).flat();
 }
+
+// Chat Recomendation 
+
+function interleave(...arrays) {
+  const weavedResult = [];
+  let maxLength = Math.max(...arrays.map(array => array.length));
+
+  for (let i = 0; i < maxLength; i++) {
+    arrays.forEach(array => {
+      if (i < array.length) {
+        weavedResult.push(array[i]);
+      }
+    });
+  }
+
+  return weavedResult;
+}
