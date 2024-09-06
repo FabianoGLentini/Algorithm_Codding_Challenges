@@ -18,6 +18,16 @@ function deleteNth(arr,n){
     return arr.filter(el => ck[el]++ < n ? el : "")
   }
 
+// My Second Pass Done at a Later Date
+
+function deleteNth(arr,n){
+  const valueCount = arr.reduce((obj,it) => {
+    obj[it] ? obj[it]: obj[it] = n
+    return obj
+  },{})
+  
+  return arr.filter(el => valueCount[el]-- > 0)
+}
 
 //Code Wars Refractor with my own minor adjustment
 
@@ -25,3 +35,14 @@ const deleteNth = (a, x) => {
     const m = {};
     return a.filter( v => (m[v] = m[v]+1||1) <= x );
   }
+
+// Chat-GPT 4o Recomendation
+
+function deleteNth(arr, n) {
+  const valueCount = {};
+  
+  return arr.filter(el => {
+    valueCount[el] = valueCount[el] || n;  // Initialize if undefined
+    return valueCount[el]-- > 0;  // Decrement and check if still valid
+  });
+}
