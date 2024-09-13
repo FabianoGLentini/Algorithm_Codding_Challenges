@@ -39,6 +39,17 @@ def find_it(seq):
     for elem in set(seq):
         if seq.count(elem) % 2 == 1:
             return elem
+
+# Chat Gbt-4o Recomendation
+
+from collections import Counter
+
+def find_it(seq):
+    counts = Counter(seq)
+    for num, count in counts.items():
+        if count % 2 != 0:
+            return num
+
         
         
     
