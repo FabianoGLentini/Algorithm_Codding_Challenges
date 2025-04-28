@@ -79,3 +79,18 @@ const createNDimensionalArray = (n, size) => {
     }
     return arr;
   }
+
+
+// Chat Recomendation
+
+const createNDimensionalArray = (n, size) => {
+  if (n === 1) {
+    return new Array(size).fill(`level ${n}`);
+  }
+
+  // Create the next level array once, then use its reference for filling
+  const subArray = createNDimensionalArray(n - 1, size);
+  return new Array(size).fill(subArray);
+};
+
+
