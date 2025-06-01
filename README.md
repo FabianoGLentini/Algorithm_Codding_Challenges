@@ -1,18 +1,27 @@
-# CodeWars-Demo
-Welcome to my CodeWars learning and practice repository! Here, I document my journey of skill enhancement as a programmer through regular engagement with CodeWars coding challenges.
-## Repository Structure
-- Each commit in this repository represents my initial attempt at solving a CodeWars coding problem before examining the community's solutions.
-- Accompanied with the commit is the provided text for the coding problem.
-- Most commits include a community solution which is different then my own.
-- When I encounter challenges I can't crack, I include my work-in-progress, then carefully breakdown and study community solutions from CodeWars and then commit the hole process. These analyses are shared here.
+# CodeWars & LeetCode Challenge Repository
 
-**Note:** As I learned and practiced new programming languages, I’ve started specifying the language used in each commit. If a commit message doesn’t explicitly mention a language, please assume it’s written in JavaScript.
+Welcome to my coding challenge repository! Here, I document my journey of skill enhancement as a programmer through regular engagement with coding challenges on **CodeWars** and **LeetCode**.
+
+## Repository Structure
+
+* Each commit in this repository represents my initial attempt at solving a coding problem from **CodeWars** or **LeetCode** before reviewing community solutions.
+* Commits include the provided text for the coding problem for reference.
+* Most commits feature alternative community solutions which differ from my own.
+* When encountering particularly challenging problems, I document my work-in-progress, thoroughly analyze community solutions, and share the complete learning process.
+
+**Note:** Commits specify the platform (CodeWars or LeetCode) and the programming language used. If a commit message doesn't explicitly mention a language, assume it’s JavaScript.
+
 ## Learning Integration
 
-I take learning seriously, and to maximize my growth, I've integrated several key practices:
+I take learning seriously and have integrated several key practices to maximize my growth:
 
-- **Anki Flashcards:** I maintain an Anki flashcard deck where I capture the insights and lessons I gain from studying community solutions. This ensures spaced repetition learning and retention.
+* **Anki Flashcards:** I maintain an Anki flashcard deck to capture insights and lessons from community solutions, ensuring spaced repetition and retention.
 
-- **Valuable Lessons:** If I come across CodeWars problems that offer particularly valuable lessons and techniques, I include them in my Anki deck as well. This allows me to revisit and reinforce essential concepts for optimum learning.
+* **Valuable Lessons:** Particularly valuable insights and techniques from challenges on both platforms are added to my Anki deck, allowing regular reinforcement of essential concepts.
 
-Feel free to explore this repository and follow along with my programming journey. You can also check out my code-wars account [here](https://www.codewars.com/users/Fabiano.L). If you have any questions or suggestions, please don't hesitate to reach out. Happy coding! 🚀👨‍💻
+Feel free to explore this repository and follow my programming journey. You can also visit my profiles:
+
+* [CodeWars](https://www.codewars.com/users/Fabiano.L)
+* [LeetCode](https://leetcode.com/u/Fabaino/)
+
+If you have questions or suggestions, please don't hesitate to reach out. Happy coding! 
