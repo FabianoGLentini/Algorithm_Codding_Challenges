@@ -58,10 +58,10 @@ class Solution(object):
         my_dict = set()
 
         for val in nums:
-            if val in set:
+            if val in my_dict:
                 return True
             
-            set.add(val)
+            my_dict.add(val)
     
         return False
         
